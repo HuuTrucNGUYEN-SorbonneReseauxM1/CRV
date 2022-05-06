@@ -1,7 +1,15 @@
 .App {
-  text-align: center;
+  padding: 4rem;
 }
 
+input {
+  padding: 1rem;
+  width: 100%;
+}
+
+.new {
+  padding: 1rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
