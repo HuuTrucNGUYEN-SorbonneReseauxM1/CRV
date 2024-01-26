@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { URL } from './conf'
 
-const URL = 'http://localhost:3000'
 function App() {
   const [state, setState] = useState([])
   const [newV, setnewV] = useState('')
