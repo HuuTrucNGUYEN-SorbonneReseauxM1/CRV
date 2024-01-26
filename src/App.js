@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
-const URL = 'http://localhost:5400'
+const URL = 'http://localhost:3000'
 function App() {
   const [state, setState] = useState([])
   const [newV, setnewV] = useState('')
@@ -35,7 +34,7 @@ function App() {
         <input value={newK} onChange={(event) => setnewK(event.target.value)} />
         Value:
         <input value={newV} onChange={(event) => setnewV(event.target.value)} />
-        <button onClick={() => create(newV, newK)}>add</button>
+        <button onClick={() => create(newK, newV)}>add</button>
       </div>
     </div>
   )
@@ -50,7 +49,7 @@ const Key = ({ val }) => {
     fetch(URL + '/item?id=' + val)
       .then((r) => r.text())
       .then(setState)
-  }, [])
+  }, [val])
 
   const update = (id, val) => {
     setUpdated('updating')
