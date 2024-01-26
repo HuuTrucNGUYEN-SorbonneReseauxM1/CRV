@@ -21,4 +21,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Setup backend url
 
-You can find in `conf.js` the `URL` of the backend.
+You can find in `src/conf.js` the `URL` of the backend.
