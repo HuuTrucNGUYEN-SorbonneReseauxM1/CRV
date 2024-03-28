@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN yarn install
+RUN yarn react-scripts start
 
 ENV PORT=8080
 
