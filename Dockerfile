@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /app
+WORKDIR /src
 
 COPY . .
 
@@ -8,4 +8,4 @@ RUN yarn install
 
 ENV PORT=8080
 
-CMD ["node", "main"]
+CMD ["node", "App"]
