@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: $/stock-consumer:1.0.0
+          tags: TtrucKat_img
