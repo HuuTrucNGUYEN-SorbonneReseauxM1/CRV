@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: 21310174/truckat_img:1.0.0
+          tags: 21310174/truckat_img:1.0.1
