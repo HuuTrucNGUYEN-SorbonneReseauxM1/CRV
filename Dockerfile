@@ -6,6 +6,6 @@ COPY . .
 
 RUN yarn install
 
-ENV PORT=5412
+ENV PORT=7654
 
 CMD ["yarn", "start"]
